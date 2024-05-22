@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  width: 550px;
+  height: 416px;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0 75px;
+  box-sizing: border-box;
+  row-gap: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content h1 {
+  font-size: 36px;
+}
+.content p {
+  font-size: 16px;
+}
+.content form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.content form input {
+  height: 50px;
+  background-color: #222222;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 0 15px;
+}
+.content button {
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #3EDCFF, #00A9CE);
+  cursor: pointer;
+}
+.content button:hover {
+  background-image: linear-gradient(to left, #3EDCFF, #00A9CE);
+}
+.content button:active {
+  transform: scale(0.98);
+}
+@media (max-width: 550px) {
+  .content {
+    width: 300px;
+    padding: 0 30px;
+  }
+  .content h1 {
+    font-size: 24px;
+  }
+  .content p {
+    font-size: 14px;
+  }
+}
+
+.d-none {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

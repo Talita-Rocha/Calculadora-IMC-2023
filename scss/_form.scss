@@ -1,0 +1,16 @@
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    //margin-top: 35px;
+
+    input{
+      height: 50px;
+      background-color: $dark;
+      border: none;
+      border-radius: 5px;
+      color: $white;
+      padding: 0 15px;
+       }
+
+  }

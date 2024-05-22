@@ -1,0 +1,66 @@
+.content {
+    width: 550px;
+    height: 416px;
+    color: $white;
+    background-color: $black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0 75px;
+    box-sizing: border-box;
+    row-gap: 35px;
+  
+  
+    display: flex;
+    //ao colocar o flex-direction column, justify e align-items se invertem
+    // ao usar duas barras comenta apenas no sass e ponto e vírgula conenta no sass e no css 
+    flex-direction: column;
+    justify-content: center;
+  
+    // position: absolute;
+    // left: 50%;
+    // top: 50%;
+    // margin-left: -275px;
+    // margin-top: -208px;
+  
+    h1 {
+      font-size: 36px;
+    }
+  
+    p{
+      font-size: 16px;
+    }
+  
+    @import 'form';
+  
+    button{
+      height: 40px;
+      border: none;
+      border-radius: 20px;
+      background-image: linear-gradient(to right, $blue-light, $blue-dark);
+      cursor: pointer;
+  
+      &:hover{
+        background-image: linear-gradient(to left, $blue-light, $blue-dark);
+      }
+  
+      &:active{
+        transform: scale(0.98);
+      }
+    }
+  
+    @media (max-width: 550px) {
+
+      width: 300px;
+      padding: 0 30px;
+  
+      h1{
+        font-size: 24px;
+      }
+  
+      p{
+        font-size: 14px;
+      }
+  
+    }
+  }
+

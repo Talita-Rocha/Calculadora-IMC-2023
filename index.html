@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto IMC</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <div class="content" id="area-calc">
+    <div>
+      <h1>Calculadora de IMC</h1>
+      <p>Preencha os dados para calcular</p>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Peso" data-mask="00.0" data-mask-reverse="true" id="peso">
+      <input type="text" placeholder="Altura" data-mask="0.00" id="altura">
+      <button type ="button" id="btn-calc">Calcular IMC</button>
+    </form>
+  </div>
+
+  <div class="content d-none" id="area-result">
+    <h1>Seu IMC é: <br> <span id="result-imc"></span> </h1>
+    <p>Sua classifcação é:  <strong id="result-classificacao"></strong> </p>
+    <button type ="button" id="btn-refazer">Refazer teste</button>
+  
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
